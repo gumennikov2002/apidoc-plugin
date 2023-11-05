@@ -9,7 +9,13 @@
                     <div class="card">
                         <div class="header">
                             <span class="title"><?= $doc['title'] ?></span>
-                            <?php if (isset($doc['tag'])): ?>
+                            <?php if (!empty($doc['tags']) && is_array($doc['tags']) ): ?>
+                                <div class="tags">
+                                    <?php foreach ($doc['tags'] as $tag): ?>
+                                        <span class="tag"><?= $tag ?></span>
+                                    <?php endforeach ?>
+                                </div>
+                            <?php elseif (isset($doc['tag'])): ?>
                                 <span class="tag"><?= $doc['tag'] ?></span>
                             <?php endif ?>
                         </div>
