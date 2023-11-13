@@ -14,7 +14,9 @@
                 'parameters' => 'Parameters',
                 'responses' => 'Responses',
                 'comments' => 'Comments',
-                'example' => 'Example'
+                'example' => 'Example',
+                'manage_show' => 'Show',
+                'manage_hide' => 'Hide',
             ]
         ]
     ]

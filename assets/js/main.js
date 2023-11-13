@@ -32,3 +32,12 @@ function syntaxHighlight(json) {
         }
     );
 }
+
+function showCardBody(cardId, show = true) {
+    const card = document.querySelector(`[data-card-id="${cardId}"]`);
+    const cardBody = card.querySelector('.body');
+
+    cardBody.style.display = show ? 'block' : 'none';
+    card.querySelector('.manage-show').style.display = show ? 'none' : 'block';
+    card.querySelector('.manage-hide').style.display = show ? 'block' : 'none';
+}

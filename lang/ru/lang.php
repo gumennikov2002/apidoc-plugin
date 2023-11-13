@@ -14,7 +14,9 @@
                 'parameters' => 'Параметры',
                 'responses' => 'Ответы',
                 'comments' => 'Комментарии',
-                'example' => 'Пример'
+                'example' => 'Пример',
+                'manage_show' => 'Показать',
+                'manage_hide' => 'Скрыть',
             ]
         ]
     ]

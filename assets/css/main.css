@@ -1,6 +1,9 @@
 .list-content {
     padding: 20px;
 }
+.taglist span {
+    cursor: pointer;
+}
 .cards {
     display: flex;
     flex-direction: column;
@@ -16,6 +19,9 @@
     border-radius: 3px;
     gap: 15px;
     margin-bottom: 15px;
+}
+.card .body {
+    display: none;
 }
 .header {
     display: flex;
@@ -74,6 +80,15 @@
     font-family: Arial, sans-serif;
     white-space: pre-wrap;
     margin: 10px 0;
+}
+
+.manage span {
+    cursor: pointer;
+    float: right;
+}
+
+.manage .manage-hide {
+    display: none;
 }
 
 .string {

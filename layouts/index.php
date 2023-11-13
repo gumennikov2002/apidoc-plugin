@@ -6,7 +6,8 @@
             <h1><?= trans('gumennikov2002.apidoc::lang.docs.layout.index.title') ?></h1>
             <div class="cards">
                 <?php foreach ($docs as $doc): ?>
-                    <div class="card">
+                    <?php $uid = uniqid() ?>
+                    <div class="card" data-card-id="<?= $uid ?>">
                         <div class="header">
                             <span class="title"><?= $doc['title'] ?></span>
                             <?php if (!empty($doc['tags']) && is_array($doc['tags']) ): ?>
@@ -86,6 +87,10 @@
                                     </div>
                                 <?php endif ?>
                             </div>
+                        </div>
+                        <div class="manage">
+                            <span class="manage-show" onclick="showCardBody('<?= $uid ?>')"><?= trans('gumennikov2002.apidoc::lang.docs.layout.index.manage_show') ?></span>
+                            <span class="manage-hide" onclick="showCardBody('<?= $uid ?>', false)"><?= trans('gumennikov2002.apidoc::lang.docs.layout.index.manage_hide') ?></span>
                         </div>
                     </div>
                 <?php endforeach ?>
