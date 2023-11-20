@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/plugins/gumennikov2002/apidoc/assets/css/main.css">
+<link rel="stylesheet" href="<?= $assetsPath ?>css/main.css">
 
 <div class="list-widget-container">
     <div class="list-widget list-scrollable-container " id="ListStructure">
@@ -99,4 +99,4 @@
     </div>
 </div>
 
-<script src="/plugins/gumennikov2002/apidoc/assets/js/main.js"></script>
+<script src="<?= $assetsPath ?>js/main.js"></script>

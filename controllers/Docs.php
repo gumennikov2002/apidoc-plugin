@@ -1,7 +1,7 @@
 <?php namespace Gumennikov2002\ApiDoc\Controllers;
 
-use BackendMenu;
 use Backend\Classes\Controller;
+use BackendMenu;
 use SystemException;
 
 /**
@@ -17,6 +17,8 @@ class Docs extends Controller
      * @var array documentation
      */
     public array $docs = [];
+
+    public string $pluginAssetsPath = '/plugins/gumennikov2002/apidoc/assets/';
 
     /**
      * @var array required permissions
@@ -43,7 +45,8 @@ class Docs extends Controller
     {
         $this->pageTitle = trans('gumennikov2002.apidoc::lang.docs.meta.page_title');
         $docs = $this->docs;
+        $assetsPath = $this->pluginAssetsPath;
 
-        return $this->makeLayout('index', compact('docs'));
+        return $this->makeLayout('index', compact('docs', 'assetsPath'));
     }
 }
