@@ -8,3 +8,7 @@
 ## 1.0.3 (2023-11-13)
 Нововведения:
 * Скрыть/показать карточку документации ([21bb0eb](https://github.com/gumennikov2002/apidoc-plugin/commit/21bb0eb50d4932157c0fb943b0a82bb6013c4ce9))
+
+## 1.0.4 (2023-12-07)
+Нововведения:
+* Возможность указать свой путь к ассетам плагина ([bd65a4e](https://github.com/gumennikov2002/apidoc-plugin/commit/bd65a4e5a2dde63682eef3deb958d54bef4b6e7a))
