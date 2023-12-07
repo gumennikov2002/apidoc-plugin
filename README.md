@@ -1,6 +1,4 @@
-## [ENG] ApiDoc is a plugin for documenting the API.
-
-# ApiDoc is a plugin for documenting the API.
+# [ENG] ApiDoc is a plugin for documenting the API.
 
 ## Installation:
 1st option:
